@@ -5,44 +5,11 @@ import "./App.css"
 function App() {
 
   const [arrayData, setmethod] = useState([])
-  // let listItems
 	useEffect(() => {
 		axios.get("http://localhost:4000/home").then(function(response) {
 			setmethod(response.data);
-      
 		})
 	}, [])
-
-//   listItems = arrayData.map((ques) =>
-//   <div className="App1">
-      
-//   <table>
-//   <tr>
-//     <th>Question:</th> <td>{ques.Question}</td>
-//   </tr>
-//   <tr>
-//     <td>(A)</td> <td></td>
-//   </tr>    
-//   <tr>
-//     <td>(B)</td> <td></td> 
-//   </tr>
-//   <tr>
-//     <td>(C)</td> <td></td> 
-//   </tr>
-//   <tr>
-//     <td>(D)</td> <td></td> 
-//   </tr>
-//   <tr>
-//     <td>Ans: </td> <td></td>
-//   </tr>
-//   <tr>
-//     <td>Explanation: </td> <td></td>
-//   </tr>
-// </table>
-//   <hr/>
-// </div>
-//   )
-
 	return (
     <div>
       
