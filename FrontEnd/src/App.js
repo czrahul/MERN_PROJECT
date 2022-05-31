@@ -4,7 +4,7 @@ import "./App.css"
 
 function App() {
 
-  const [arrayData, setmethod] = useState("")
+  const [arrayData, setmethod] = useState([])
   // let listItems
 	useEffect(() => {
 		axios.get("http://localhost:4000/home").then(function(response) {
